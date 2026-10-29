@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbdce5">
+  <meta name="description" content="Float beauty workspace marketplace concept">
+  <title>Float | Your Space to Create</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo">float<span>➤</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#about">About Float</a>
+    </nav>
+
+    <a href="#explore" class="nav-button">Find a Space</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">THE BEAUTY OF FREEDOM</span>
+
+        <h1>Your craft.<br><em>Your space.</em></h1>
+
+        <p>
+          Beautiful workspaces for independent beauty
+          professionals. Discover studios and salon suites
+          that fit your schedule, style, and business.
+        </p>
+
+        <a href="#explore" class="primary-button">
+          Explore Spaces →
+        </a>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-circle">
+          <span class="hero-symbol">✳</span>
+          <div class="hero-statement">
+            Beauty has<br>no boundaries.
+          </div>
+        </div>
+        <div class="floating-tag">✦ Space to create</div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE FLOAT</span>
+          <h2>Find your perfect space.</h2>
+          <p>Search spaces that fit your next appointment.</p>
+        </div>
+      </div>
+
+      <div class="search-panel">
+        <label>
+          Location
+          <input
+            type="search"
+            id="location"
+            placeholder="Atlanta, GA"
+          >
+        </label>
+
+        <label>
+          Specialty
+          <select id="specialty">
+            <option value="all">All Specialties</option>
+            <option value="Makeup">Makeup</option>
+            <option value="Hair">Hair</option>
+            <option value="Lashes">Lashes</option>
+            <option value="Nails">Nails</option>
+          </select>
+        </label>
+
+        <button id="search-button" type="button">
+          Search Spaces
+        </button>
+      </div>
+
+      <div class="results-heading">
+        <h3>Rentals near you</h3>
+        <span id="result-count" aria-live="polite"></span>
+      </div>
+
+      <div class="workspace-grid" id="workspace-grid"></div>
+
+      <p id="no-results" class="empty-message" hidden>
+        No spaces found. Try another location or specialty.
+      </p>
+    </section>
+
+    <section class="about" id="about">
+      <span class="eyebrow">THE FLOAT EXPERIENCE</span>
+      <h2>Built for beauty professionals.</h2>
+
+      <div class="benefits">
+        <article>
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>
+            Explore workspace options by location
+            and professional specialty.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Choose</h3>
+          <p>
+            View equipment, daily pricing,
+            and workspace information.
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Create</h3>
+          <p>
+            Plan your workday in a space
+            that complements your craft.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="booking-dialog" aria-labelledby="dialog-title">
+    <button id="close-dialog" class="close-button"
+      type="button" aria-label="Close">×</button>
+
+    <div id="booking-content"></div>
+  </dialog>
+
+  <footer>
+    <div class="logo">float<span>➤</span></div>
+    <p>Your space to create. Wherever beauty takes you.</p>
+    <small>
+      Academic prototype. Listings and bookings are fictional.
+      No payments or real reservations are processed.
+    </small>
+  </footer>
+
+</body>
+</html>
